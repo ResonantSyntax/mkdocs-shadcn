@@ -1,22 +1,94 @@
 ---
-title: Welcome to mkdocs-shadcn
-summary: Beautifully designed mkdocs theme
+title: SeekerAI Platform Documentation
+summary: Comprehensive documentation for SeekerAI microservices platform
 sidebar_title: Home
 order: 0
-external_links:
-  "shadcn/ui": https://ui.shadcn.com/docs
 ---
 
+# SeekerAI Platform Documentation
 
-First and foremost, this is an unofficial port of [shadcn/ui](https://ui.shadcn.com/) to [MkDocs](https://www.mkdocs.org), and is not affiliated with [@shadcn](https://twitter.com/shadcn).
+Welcome to the SeekerAI microservices platform documentation. This documentation provides comprehensive guides for all services, infrastructure, and operational procedures.
 
-The main goal of this project is to port the shadcn style to mkdocs while avoiding to turn it into a whole framework of the death.
+## Quick Start
 
-So first it should support [built-in extensions](https://python-markdown.github.io/extensions/) and some [`pymdownx`](https://facelessuser.github.io/pymdown-extensions/) ones.
+Get started with the platform by following our [Quick Start Guide](get_started.md).
 
+## Documentation Sections
 
-!!! info "Migrating from mkdocs-material? "
-    In the general case, I would advise **not migrating** from [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) since this theme is well established, very mature, with a lot of features we love.
+### Core Infrastructure
 
-    You can easily migrate to this theme if your documentaion does not rely on too many extensions/plugins. Of course, this is also a good choice for your next brand new project!
-  
+Critical infrastructure services that form the foundation of the platform:
+
+- [LiveKit Infrastructure](core/livekit-infra/index.md) - WebRTC infrastructure and real-time communication
+- [Nginx](core/nginx/index.md) - Reverse proxy and routing
+- [SIP Infrastructure](core/sip/index.md) - Telephony integration
+
+### Applications
+
+Business applications and customer-facing services:
+
+- [Seeker UI](applications/seeker-ui/index.md) - Reflex-based web application
+- [Simplified Psychic](applications/simplified-psychic/index.md) - Voice AI agent
+- [Embed Psychic Agent](applications/embed-psychic-agent/index.md) - Web embed for voice AI
+- [Dispatch](applications/dispatch/index.md) - Orchestration service
+- [Arcane](applications/arcane/index.md) - Application manager
+
+### Agents
+
+Agent workers and voice bots:
+
+- [Agent Architecture](agents/agent-architecture.md)
+- [Development](agents/development.md)
+- [Deployment](agents/deployment.md)
+
+### Tools
+
+Operational tooling and dashboards:
+
+- [LiveKit Dashboard](tools/livekit-dashboard/index.md)
+- [Langfuse](tools/langfuse/index.md)
+- [Homarr](tools/homarr/index.md)
+- [Homer](tools/homer/index.md)
+- [Budibase](tools/budibase/index.md)
+- [Cloudflared](tools/cloudflared/index.md)
+
+### Infrastructure
+
+Infrastructure management and operations:
+
+- [Docker Environment](infrastructure/docker/index.md)
+- [Data Management](infrastructure/data/index.md)
+- [Secrets Management](infrastructure/secrets/index.md)
+- [Monitoring](infrastructure/monitoring/index.md)
+
+### Development
+
+Developer guides and workflows:
+
+- [Local Setup](development/local-setup.md)
+- [Contributing](development/contributing.md)
+- [Code Style](development/code-style.md)
+- [Testing](development/testing.md)
+
+### Deployment
+
+Deployment and operations guides:
+
+- [Production Deployment](deployment/production.md)
+- [Docker Compose](deployment/docker-compose.md)
+- [Scaling](deployment/scaling.md)
+- [Updates](deployment/updates.md)
+
+### Reference
+
+Quick reference documentation:
+
+- [API Reference](reference/api-reference.md)
+- [Environment Variables](reference/environment-variables.md)
+- [Docker Compose Reference](reference/docker-compose-reference.md)
+- [Troubleshooting](reference/troubleshooting.md)
+- [Glossary](reference/glossary.md)
+
+## Getting Help
+
+For issues and questions, please refer to the [Troubleshooting Guide](reference/troubleshooting.md) or contact the development team.

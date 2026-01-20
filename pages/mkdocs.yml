@@ -1,7 +1,7 @@
-site_name: "mkdocs-shadcn"
-site_url: "https://asiffer.github.io/mkdocs-shadcn"
-site_description: "Documentation that also shines"
-site_author: "Alban Siffer <31479857+asiffer@users.noreply.github.com>"
+site_name: "SeekerAI Microservices Documentation"
+site_url: "https://docs.seekerai.com"
+site_description: "Comprehensive documentation for SeekerAI microservices platform"
+site_author: "SeekerAI Team"
 dev_addr: "127.0.0.1:8080"
 repo_url: "https://github.com/asiffer/mkdocs-shadcn"
 theme:
@@ -15,14 +15,150 @@ theme:
       "\\dx": "\\mathrm{d}x"
   # show_datetime: true
 
-# nav:
-#   - Welcome: index.md
-#   - get_started.md
-#   - Extensions:
-#       - Footnotes: extensions/footnotes.md
-#       - Tabs: extensions/pymdownx_blocks_tab.md
-#       - Details: extensions/pymdownx_blocks_details.md
-#       - Codexec: extensions/codexec.md
+nav:
+  - Home: index.md
+  - Get Started: get_started.md
+  - Core Infrastructure:
+    - Overview: core/index.md
+    - LiveKit Infrastructure:
+      - Overview: core/livekit-infra/index.md
+      - Architecture: core/livekit-infra/architecture.md
+      - Configuration: core/livekit-infra/configuration.md
+      - Deployment: core/livekit-infra/deployment.md
+      - Troubleshooting: core/livekit-infra/troubleshooting.md
+    - Nginx:
+      - Overview: core/nginx/index.md
+      - Configuration: core/nginx/configuration.md
+      - SSL/TLS: core/nginx/ssl-tls.md
+      - Routing: core/nginx/routing.md
+      - Troubleshooting: core/nginx/troubleshooting.md
+    - SIP:
+      - Overview: core/sip/index.md
+      - SIP Proxy: core/sip/sip-proxy.md
+      - Registration: core/sip/registration.md
+      - Integration: core/sip/integration.md
+  - Applications:
+    - Overview: applications/index.md
+    - Seeker UI:
+      - Overview: applications/seeker-ui/index.md
+      - Architecture: applications/seeker-ui/architecture.md
+      - Setup: applications/seeker-ui/setup.md
+      - Development: applications/seeker-ui/development.md
+      - Deployment: applications/seeker-ui/deployment.md
+      - Database: applications/seeker-ui/database.md
+      - API Reference: applications/seeker-ui/api-reference.md
+    - Simplified Psychic:
+      - Overview: applications/simplified-psychic/index.md
+      - Architecture: applications/simplified-psychic/architecture.md
+      - Setup: applications/simplified-psychic/setup.md
+      - Prompts:
+        - Overview: applications/simplified-psychic/prompts/index.md
+        - Intent Prompts: applications/simplified-psychic/prompts/intent-prompts.md
+        - Topic Prompts: applications/simplified-psychic/prompts/topic-prompts.md
+        - Persona Prompts: applications/simplified-psychic/prompts/persona-prompts.md
+        - Temporal Prompts: applications/simplified-psychic/prompts/temporal-prompts.md
+      - Connection Flow: applications/simplified-psychic/connection-flow.md
+      - Data Points: applications/simplified-psychic/datapoints.md
+      - Observability: applications/simplified-psychic/observability.md
+      - Deployment: applications/simplified-psychic/deployment.md
+    - Embed Psychic Agent:
+      - Overview: applications/embed-psychic-agent/index.md
+      - Setup: applications/embed-psychic-agent/setup.md
+      - Features: applications/embed-psychic-agent/features.md
+      - Customization: applications/embed-psychic-agent/customization.md
+      - Embedding: applications/embed-psychic-agent/embedding.md
+      - Deployment: applications/embed-psychic-agent/deployment.md
+    - Dispatch:
+      - Overview: applications/dispatch/index.md
+      - Architecture: applications/dispatch/architecture.md
+      - Setup: applications/dispatch/setup.md
+      - API Reference: applications/dispatch/api-reference.md
+      - Debugging: applications/dispatch/debugging.md
+    - Arcane:
+      - Overview: applications/arcane/index.md
+      - Setup: applications/arcane/setup.md
+      - Usage: applications/arcane/usage.md
+      - Integration: applications/arcane/integration.md
+  - Agents:
+    - Overview: agents/index.md
+    - Architecture: agents/agent-architecture.md
+    - Development: agents/development.md
+    - Deployment: agents/deployment.md
+    - Monitoring: agents/monitoring.md
+  - Tools:
+    - Overview: tools/index.md
+    - LiveKit Dashboard:
+      - Overview: tools/livekit-dashboard/index.md
+      - Features: tools/livekit-dashboard/features.md
+      - Setup: tools/livekit-dashboard/setup.md
+      - Rooms: tools/livekit-dashboard/rooms.md
+      - Egress: tools/livekit-dashboard/egress.md
+      - SIP Integration: tools/livekit-dashboard/sip-integration.md
+      - Analytics: tools/livekit-dashboard/analytics.md
+    - Langfuse:
+      - Overview: tools/langfuse/index.md
+      - Setup: tools/langfuse/setup.md
+      - Tracing: tools/langfuse/tracing.md
+      - Integration: tools/langfuse/integration.md
+    - Homarr:
+      - Overview: tools/homarr/index.md
+      - Setup: tools/homarr/setup.md
+      - Customization: tools/homarr/customization.md
+    - Homer:
+      - Overview: tools/homer/index.md
+      - Setup: tools/homer/setup.md
+      - Customization: tools/homer/customization.md
+    - Budibase:
+      - Overview: tools/budibase/index.md
+      - Setup: tools/budibase/setup.md
+      - Usage: tools/budibase/usage.md
+    - Cloudflared:
+      - Overview: tools/cloudflared/index.md
+      - Setup: tools/cloudflared/setup.md
+      - Configuration: tools/cloudflared/configuration.md
+  - Infrastructure:
+    - Overview: infrastructure/index.md
+    - Docker:
+      - Overview: infrastructure/docker/index.md
+      - Structure: infrastructure/docker/structure.md
+      - Networking: infrastructure/docker/networking.md
+      - Volumes: infrastructure/docker/volumes.md
+      - Environment: infrastructure/docker/environment.md
+    - Data:
+      - Overview: infrastructure/data/index.md
+      - Volumes: infrastructure/data/volumes.md
+      - Backups: infrastructure/data/backups.md
+      - Retention: infrastructure/data/retention.md
+    - Secrets:
+      - Overview: infrastructure/secrets/index.md
+      - Management: infrastructure/secrets/management.md
+      - Security: infrastructure/secrets/security.md
+    - Monitoring:
+      - Overview: infrastructure/monitoring/index.md
+      - Logging: infrastructure/monitoring/logging.md
+      - Metrics: infrastructure/monitoring/metrics.md
+      - Alerts: infrastructure/monitoring/alerts.md
+  - Development:
+    - Overview: development/index.md
+    - Local Setup: development/local-setup.md
+    - Contributing: development/contributing.md
+    - Code Style: development/code-style.md
+    - Testing: development/testing.md
+    - Debugging: development/debugging.md
+  - Deployment:
+    - Overview: deployment/index.md
+    - Production: deployment/production.md
+    - Docker Compose: deployment/docker-compose.md
+    - Scaling: deployment/scaling.md
+    - Updates: deployment/updates.md
+    - Disaster Recovery: deployment/disaster-recovery.md
+  - Reference:
+    - Overview: reference/index.md
+    - API Reference: reference/api-reference.md
+    - Environment Variables: reference/environment-variables.md
+    - Docker Compose Reference: reference/docker-compose-reference.md
+    - Troubleshooting: reference/troubleshooting.md
+    - Glossary: reference/glossary.md
 
 plugins:
   - search
