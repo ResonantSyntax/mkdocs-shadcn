@@ -1,0 +1,22 @@
+services:
+  mkdocs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mkdocs-shadcn
+    volumes:
+      # Mount pages directory for live editing
+      - ./pages:/app/pages
+      # Mount theme source for development (optional, comment out if not needed)
+      - ./shadcn:/app/shadcn
+      - ./tailwind:/app/tailwind
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - shared
+
+networks:
+  shared:
+    external: true
+    name: shared
